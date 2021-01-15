@@ -1,0 +1,26 @@
+<div class="p-5 h-100 border">
+  <people-search-result
+    ng-if="$ctrl.isPerson"
+    person="$ctrl.searchData"
+  ></people-search-result>
+  <films-search-result
+    ng-if="$ctrl.isFilm"
+    film="$ctrl.searchData"
+  ></films-search-result>
+  <planets-search-result
+    ng-if="$ctrl.isPlanet"
+    planet="$ctrl.searchData"
+  ></planets-search-result>
+  <species-search-result
+    ng-if="$ctrl.isSpecies"
+    species="$ctrl.searchData"
+  ></species-search-result>
+  <starships-search-result
+    ng-if="$ctrl.isStarship"
+    starship="$ctrl.searchData"
+  ></starships-search-result>
+  <vehicles-search-result
+    ng-if="$ctrl.isVehicle"
+    vehicle="$ctrl.searchData"
+  ></vehicles-search-result>
+</div>
