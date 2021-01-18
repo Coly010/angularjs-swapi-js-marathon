@@ -16,7 +16,7 @@ function searchBarCtrl() {
 
   ctrl.searchTerm = '';
 
-  ctrl.doSearch = function () {
-    ctrl.onSearch({ searchTerm: ctrl.searchTerm });
+  ctrl.doSearch = function (event) {
+    if (event.key === 'Enter') ctrl.onSearch({ searchTerm: ctrl.searchTerm });
   };
 }

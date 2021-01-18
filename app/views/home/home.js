@@ -28,6 +28,7 @@ function homeCtrl($scope, searchService) {
     }
 
     ctrl.searching = true;
+    ctrl.searchResults = [];
     ctrl.searchResults = await searchService.search(searchTerm);
     ctrl.searching = false;
 

@@ -1,5 +1,5 @@
 <div class="text-center">
-  <p>Enter something related to the Star Wars Universe</p>
+  <p>Enter something related to the Star Wars Universe then press Enter</p>
 </div>
 <div class="input-group input-group-lg">
   <span class="input-group-text"><i class="bi-search"></i></span>
@@ -9,6 +9,6 @@
     ng-model="$ctrl.searchTerm"
     aria-label="Search the Star Wars
   Database"
-    ng-keyup="$ctrl.doSearch()"
+    ng-keyup="$ctrl.doSearch($event)"
   />
 </div>

@@ -5,12 +5,14 @@
 
   <div
     ng-if="$ctrl.searchResults && $ctrl.searchResults.length > 0"
-    class="container-fluid mt-5 d-flex flex-row flex-wrap"
+    class="container-fluid mt-5"
   >
-    <search-result
-      class="w-25"
-      ng-repeat="result in $ctrl.searchResults"
-      search-data="result"
-    ></search-result>
+    <div class="row" id="results-container">
+      <search-result
+        class="col-3 col-xs-6"
+        ng-repeat="result in $ctrl.searchResults"
+        search-data="result"
+      ></search-result>
+    </div>
   </div>
 </div>
